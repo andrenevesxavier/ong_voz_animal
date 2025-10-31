@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--descrição para mecanismos de busca-->
     <meta name="description" content="Voz animal">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/projetos.css">
     <title>projetos</title>
 </head>
 <body>
 
     <!--inicio cabeçalho-->
     <header>
-        <div>
-            <a href="/">
-                <h1>VOZ ANIMAL</h1>
-            </a>               
-        </div>
-
-        <!--tag para menu hamburguer-->
-        <button aria-label="abrir menu"></button>
-
-        <nav>
-            <ul>
-                <li><a href="projetos.html">PROJETOS</a></li>
-                <li><a href="cadastro.html">CADASTRE-SE</a></li>
-            </ul>
-        </nav>     
+        <div class="cabecalho__itens">                   
+            <nav>
+                <a class="logo" href="/"><h1>VOZ ANIMAL</h1></a> 
+                <div class="mobile__menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav__list">
+                    <li class="sublinhado"><a  href="projetos.html">PROJETOS</a></li>                             
+                    <li><a href="cadastro.html">CADASTRE-SE</a></li>    
+                </ul>
+            </nav>           
+        </div>            
     </header>
     <!--fim cabeçalho-->
 
@@ -33,106 +34,117 @@
     <main>
 
         <!--início sessão voluntario e doação-->
-        <section>
-            <div>
-                <h2>FAÇA PARTE</h2>               
-                    <h2>Juntos, somos a voz que eles não têm</h2>
-                    <p>A força da nossa causa vem de pessoas como você — que acreditam que cada vida importa.Com gestos simples, podemos garantir um futuro mais digno para os animais que esperam por ajuda.Venha fazer parte dessa mudança.</p>                 
+        <section class="projetos">
+            <div class="conteudo">
+                <div class="conteudo__texto">
+                    <div class="conteudo__texto__introducao">
+                        <h2>FAÇA PARTE</h2>               
+                        <h3>Juntos, somos a voz que eles não têm</h3>
+                        <p>A força da nossa causa vem de pessoas como você — que acreditam que cada vida importa.Com gestos simples, podemos garantir um futuro mais digno para os animais que esperam por ajuda.Venha fazer parte dessa mudança.</p>                 
+                    </div>
+
+                
+
+                    <!--início sessão doação-->
+                    <div class="conteudo__texto__doacao">
+                        <h3>faça uma doação e transforme vidas</h3>
+                        <p>Uma das principais formas de nos ajudar é através da doação. Com ela, você se torna parte direta dessa causa, contribuindo para que possamos continuar oferecendo cuidado, acolhimento e amor aos animais que mais precisam. Cada contribuição, por menor que pareça, faz uma enorme diferença.</p> 
+                        <p>As doações são totalmente revertidas para a manutenção da nossa ONG — ajudando nos resgates, cuidados veterinários, alimentação, medicamentos e abrigo para os animais que ainda esperam por um lar. Com o seu apoio, conseguimos continuar oferecendo amor, segurança e esperança a quem mais precisa.</p>
+
+                        <p>Para fazer uma doação, use o formulário abaixo.</p>
+                    </div>
+                    <!--fim sessão doação-->
+
+                    <!--incio formulário para doação-->
+                    <div class="conteudo__texto__formulario__doacao">
+                        <form>
+
+                            <div>
+                                <label for="doacao">valor da doação <span>(obrigatório)</span></label>
+                                <input type="number" id="doacao" name="doacao" step="0.01" placeholder="R$0,00" required>
+                            </div>
+                            
+                            <div>
+                                <label for="nome">nome <span>(obrigatório)</span></label>
+                                <input type="text" id="nome" name="nome" placeholder="digite seu nome" required>
+                            </div>
+                             
+                            <div>
+                                <label for="email">Email <span>(obrigatório)</span></label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                            </div>
+                            
+                            <div>
+                                <label for="Telefone">Telefone</label>
+                                <input type="tel" id="Telefone" name="Telefone" placeholder="(XX) XXXXX-XXXX">
+                            </div>
+                            
+                            <button type="submit">Faça uma doação</button>
+
+                        </form>
+                    </div>
+                    <!--fim formulário doação-->
+
+                    <!--iníco sessão voluntariado-->
+                    <div>
+                        <h3>Seja um voluntário e faça parte dessa transformação</h3>
+                        <p>Outra forma essencial de nos ajudar é através do voluntariado. Ser voluntário é mais do que doar tempo, é oferecer carinho, atenção e esperança para os animais que ainda esperam por um lar.
+                        Cada gesto conta: ajudar nos cuidados diários, participar de eventos, apoiar campanhas ou simplesmente estar presente já faz toda a diferença. O amor e a dedicação dos nossos voluntários são o coração do nosso trabalho e tornam possível cada resgate e cada final feliz.</p>
+                        <p>Inscreva-se como voluntário e venha fazer parte dessa história de amor e cuidado! </p>
+                    </div>
+                    <!--fim sessão voluntariado-->
+
+                    <!--inico formulário voluntariado-->
+                    <div class="conteudo__texto__formulario__voluntario">
+                        <form>
+
+                            <div>
+                                <label for="nome_">nome <span>(obrigatório)</span></label>
+                                <input type="text" id="nome_" name="nome" placeholder="digite seu nome" required> 
+                            </div>
+
+                            <div>
+                                <label for="email_">Email <span>(obrigatório)</span></label>
+                                <input type="email" id="email_" name="email" placeholder="Digite seu email" required>
+                            </div>
+                            
+                            <div>
+                                <label for="Telefone_">Telefone</label>
+                                <input type="tel" id="Telefone_" name="Telefone" placeholder="(XX) XXXXX-XXXX">
+                            </div>
+                            
+                            <div>
+                                <label for="cidade_">cidade <span>(obrigatório)</span></label>
+                                <input type="text" id="cidade_" name="cidade" placeholder="Digite a sua cidade" required>
+                            </div>
+                            
+                            <div>
+                                <label for="idade_">Idade</label>    
+                                <input type="number" id="idade_" name="idade" placeholder="Digite a sua idade" required>
+                            </div>
+                            
+                            <div>
+                                <label for="interesse">Área de interesse</label>
+                                <select name="opcoes" id="interesse" multiple size="1">
+                                    <option value="opcao1">Resgate de animais</option>
+                                    <option value="opcao2">Lar temporário</option>
+                                    <option value="opcao3">Motorista</option>
+                                    <option value="opcao4">Passear com os animais</option>
+                                    <option value="opcao5">Cuidar dos animais</option>
+                                </select>
+                            </div>
+        
+                            <button type="submit">Quero ser voluntário</button>
+
+                        </form>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/imagens/foto_pata_cachorro.png" alt="foto pata de um cachorro" loading="lazy" width="320" height="408">
+                </div>
             </div>
-
-            <div>
-                <img src="assets/imagens/foto_pata_cachorro.png" alt="foto pata de um cachorro" loading="lazy" width="320" height="408">
-            </div>
-
-            <!--início sessão doação-->
-            <div>
-                <h3>faça uma doação e transforme vidas</h3>
-                <p>Uma das principais formas de nos ajudar é através da doação. Com ela, você se torna parte direta dessa causa, contribuindo para que possamos continuar oferecendo cuidado, acolhimento e amor aos animais que mais precisam. Cada contribuição, por menor que pareça, faz uma enorme diferença. 
-                As doações são totalmente revertidas para a manutenção da nossa ONG — ajudando nos resgates, cuidados veterinários, alimentação, medicamentos e abrigo para os animais que ainda esperam por um lar.
-
-                Com o seu apoio, conseguimos continuar oferecendo amor, segurança e esperança a quem mais precisa.
-
-                Para fazer uma doação, use o formulário abaixo.</p>
-            </div>
-            <!--fim sessão doação-->
-
-            <br><br>
-            <!--incio formulário para doação-->
-            <div>
-                <form>
-                    
-                    <label for="doacao">valor da doação (obrigatório)</label>
-                    <input type="number" id="doacao" name="doacao" step="0.01" placeholder="R$0,00" required>
-                    <br><br>
-
-                    <label for="nome">nome (obrigatório)</label>
-                    <input type="text" id="nome" name="nome" placeholder="digite seu nome" required> 
-                    <br><br>
-
-                    <label for="email">Email (obrigatório)</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                    <br><br>
-
-                    <label for="Telefone">Telefone</label>
-                    <input type="tel" id="Telefone" name="Telefone" placeholder="(XX) XXXXX-XXXX">
-                    <br><br>
-
-                    <button type="submit">Faça uma doação</button>
-                    <br><br>
-                </form>
-            </div>
-            <!--fim formulário doação-->
-
-            <!--iníco sessão voluntariado-->
-            <div>
-                <h3>Seja um voluntário e faça parte dessa transformação</h3>
-                <p>Outra forma essencial de nos ajudar é através do voluntariado. Ser voluntário é mais do que doar tempo — é oferecer carinho, atenção e esperança para os animais que ainda esperam por um lar.
-                Cada gesto conta: ajudar nos cuidados diários, participar de eventos, apoiar campanhas ou simplesmente estar presente já faz toda a diferença. O amor e a dedicação dos nossos voluntários são o coração do nosso trabalho e tornam possível cada resgate e cada final feliz.
-                Inscreva-se como voluntário e venha fazer parte dessa história de amor e cuidado! </p>
-            </div>
-            <!--fim sessão voluntariado-->
-
-            <br><br>
-
-            <!--inico formulário voluntariado-->
-            <div>
-                <form>
-
-                    <label for="nome_">nome (obrigatório)</label>
-                    <input type="text" id="nome_" name="nome" placeholder="digite seu nome" required> 
-                    <br><br>
-
-                    <label for="email_">Email (obrigatório)</label>
-                    <input type="email" id="email_" name="email" placeholder="Digite seu email" required>
-                    <br><br>
-
-                    <label for="Telefone_">Telefone</label>
-                    <input type="tel" id="Telefone_" name="Telefone" placeholder="(XX) XXXXX-XXXX">
-                    <br><br>
-
-                    <label for="cidade_">cidade (obrigatório)</label>
-                    <input type="text" id="cidade_" name="cidade" placeholder="Digite a sua cidade" required>
-                    <br><br>
-
-                    <label for="idade_">Idade</label>    
-                    <input type="number" id="idade_" name="idade" placeholder="Digite a sua idade" required>
-                    <br><br>
-
-                    <label for="interesse">Área de interesse</label>
-                    <select name="opcoes" id="interesse" multiple size="3">
-                        <option value=""> Selecione</option>
-                        <option value="opcao1">Resgate de animais</option>
-                        <option value="opcao2">Lar temporário</option>
-                        <option value="opcao3">Motorista</option>
-                        <option value="opcao4">Passear com os animais</option>
-                        <option value="opcao5">Cuidar dos animais</option>
-                    </select>
-                    <br><br>
-                        
-                    <button type="submit">Quero ser voluntário</button>
-                    <br><br>                   
-                </form>
-            </div>
+            
+            
             <!--fim sessão voluntariado--> 
 
         </section>
@@ -146,5 +158,7 @@
         <p>© 2025 Voz Animal. Todos os direitos reservados.</p>
     </footer>
     <!--fim rodapé-->
+
+    <script src="script.js"></script>
 </body>
 </html>

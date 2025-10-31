@@ -5,57 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--descrição para mecanismos de busca-->
     <meta name="description" content="Voz animal">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/home.css">
     <title>Voz Animal</title>
     </head>
     <body>
         <!-- inicio do cabeçalho-->
         <header>
-            <div>
-                <a href="/">
-                    <h1>VOZ ANIMAL</h1>
-                </a>               
-            </div>
-
-            <!--tag para menu hamburguer-->
-            <button aria-label="abrir menu"></button>
-
-            <nav>
-                <ul>
-                    <li><a href="projetos.html">PROJETOS</a></li>
-                    <li><a href="cadastro.html">CADASTRE-SE</a></li>
-                </ul>
-            </nav>     
+            <div class="cabecalho__itens">                   
+                <nav>
+                    <a class="logo" href="/"><h1>VOZ ANIMAL</h1></a> 
+                    <div class="mobile__menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <ul class="nav__list">
+                        <li><a  href="projetos.html">PROJETOS</a></li>                              
+                        <li><a href="cadastro.html">CADASTRE-SE</a></li>    
+                    </ul>
+                </nav>           
+            </div>      
         </header>
         <!-- fim do cabeçalho-->
 
         <!-- inico do conteudo principal-->
         <main>
-            <section>
-                <h2>Seja a diferença que eles precisam.</h2>
-                <p>Pequenas ações geram grandes transformações. Clique e descubra como você pode mudar a vida de um animal abandonado hoje.Eles contam com você!</p>
-                <div>
-                    <a href="voluntariado.html">Clique aqui</a>
+            <section class="icicio">
+                <div class="cpa">
+                    <h2>Seja a diferença que eles precisam.</h2>
+                    <p>Pequenas ações geram grandes transformações. Clique e descubra como você pode mudar a vida de um animal abandonado hoje.Eles contam com você!</p>
+                        <a href="projetos.html">Clique aqui</a> 
                 </div>
-                
+                    
             </section>
 
+
             <!--sessão sobre a organização-->
-            <section>
-                <div>
-                    <h2>NOSSO PILARES</h2>
-                </div>
+            <section class="segunda__sessao">
                 
-                <div>
+                <div class="cartao">
                     <h3>MISSÃO</h3>
                     <p>Lutar ativamente pelos direitos e defesa dos animais, inspirando a mudança de comportamento na sociedade para erradicar o abandono e os maus-tratos, e construir um futuro de coexistência respeitosa entre humanos e animais.</p>
                 </div>
                 
-                <div>
+                <div class="cartao">
                     <h3>VISÃO</h3>
                     <p>Alcançar uma sociedade onde o abandono e os maus-tratos de animais sejam estatísticas do passado, e onde cada vida animal seja valorizada, protegida e tratada com o máximo de respeito e dignidade.</p>
                 </div>
                 
-                <div>
+                <div  class="cartao" class="cartao__">
                     <h3>VALORES</h3>
                     <p>Somos movidos por princípios inegociáveis. O Respeito à Vida é o valor central de todas as nossas decisões. Agimos com Empatia e oferecemos Cuidado de excelência. Garantimos a Transparência total em nossos processos e a Responsabilidade em cada resgate e adoção, colocando o bem-estar animal sempre em primeiro lugar.</p>
                 </div>
@@ -64,16 +63,13 @@
             <!--fim sessão sobre a organização-->
 
             <!--sessão equipe-->
-            <section>
+            <section class="secao__equipe">
                 <div>
-                    <img src="assets/imagens/foto_equipe.png" alt="foto_doltora_com_cachorro" loading="lazy" width="561" height="561">
+                    <img src="assets/imagens/foto_equipe.png" alt="foto_doltora_com_cachorro" loading="lazy">
                 </div>
                 
-                <div>
+                <div class="secao__equipe__texto">
                     <h2>Uma equipe apaixonada de defensores de animais, dedicada a colaborar para o bem-estar de dos animais.</h2>
-                </div>
-
-                <div>
                     <p>O cuidado com os animais resgatados é o nosso foco principal. Nossa equipe técnica é composta por Médicos Veterinários dedicados à saúde e reabilitação, e por profissionais de Gestão e Logística que garantem a excelência e a transparência em todas as etapas das operações de resgate, tratamento e manutenção do nosso abrigo</p>
                 </div>               
                 
@@ -81,56 +77,52 @@
             <!--fim sessão equipe-->
 
             <!--iníco sessão animais resgatados-->
-            <section>
-                <div>
+            <section class="secao__animais">
                     <h3>ANIMAIS RESGATADOS</h3>
+                <div class="secao__animais__nomes">
+                    <div class="cartao__animais">
+                        <img src="assets/imagens/foto_tom.png" alt="foto_gato_preto" width="410" height="308" loading="lazy">           
+                        <h4>TOM</h4>
+                        <p>O mais brincalhão do abrigo. Vítima de maus tratos, foi resgatado há três meses</p>
+                    </div>
+                
+                    <div class="cartao__animais">
+                        <img src="assets/imagens/foto_mel.png" alt="foto_cachorra_amarela" width="410" height="308" loading="lazy">    
+                        <h4>MEL</h4>
+                        <p>Recém chegada! Foi resgatada há uma semana e está se adaptando bem.</p>
+                    </div>
+                
+                    <div class="cartao__animais">
+                        <img src="assets/imagens/foto_luna.png" alt="foto_gata_preta_e_branca" width="410" height="308" loading="lazy">
+                        <h4>LUNA</h4>
+                        <p>Resgatada de um telhado, só quer carinho e sossego, resgatada a dois meses</p>
+                    </div>
                 </div>
                 
-                <div>
-                    <img src="assets/imagens/foto_tom.png" alt="foto_gato_preto" width="410" height="308" loading="lazy">
-                </div>
-                
-                <div>
-                    <h4>TOM</h4>
-                    <p>O mais brincalhão do abrigo. Quer roubar seu coração</p>
-                </div>
-                
-                <div>
-                    <img src="assets/imagens/foto_mel.png" alt="foto_cachorra_amarela" width="410" height="308" loading="lazy">
-                </div>
-                
-                <div>
-                    <h4>MEL</h4>
-                    <p>Ela é um chiclete! Não desgruda e transforma qualquer dia ruim em festa. Gosta de colo e passeios curtos.</p>
-                </div>
-                
-                <div>
-                    <img src="assets/imagens/foto_luna.png" alt="foto_gata_preta_e_branca" width="410" height="308" loading="lazy">
-                </div>
-                
-                <div>
-                    <h4>LUNA</h4>
-                    <p>Resgatada de um telhado. Uma rainha que só quer carinho e sossego.</p>
-                </div>
                 
             </section>
             <!--fim sessão animais resgatados-->
 
             <!--inico sessão contatos-->
-            <section>
-                <h2>NOSSOS CONTATOS</h2>
-                <h3>E-mail para Dúvidas:contato@vozanimal.org</h3>
-                <h3>Telefone/WhatsApp(XX) 9XXXX-XXXX</h3>
+            <section class="contato">
+                <div class="contato__">
+                    <h2>NOSSOS <br> CONTATOS</h2>
+                    <h3>📧E-mail para Dúvidas:contato@vozanimal.org</h3>
+                    <h3>📞Telefone/WhatsApp(XX) 9XXXX-XXXX</h3>
+                </div>
+                
             </section>
             <!--fim sessão contatos-->
 
         </main>
+ 
         <!--fim do conteudo principal-->
 
-        <!--inicio do roda-->
+        <!--inicio do rodapé-->
         <footer>
             <p>© 2025 Voz Animal. Todos os direitos reservados.</p>
         </footer>
-        <!--fim do rodapé-->
+        <!--fim do rodapé-->       
+        <script src="script.js"></script>
     </body>
 </html>

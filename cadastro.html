@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--descrição para mecanismos de busca-->
     <meta name="description" content="Voz animal">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/cadastro.css">
     <title>Document</title>
 </head>
 <body>
 
     <!--iníco cabeçalho-->
     <header>
-        <div>
-            <a href="/">
-                <h1>VOZ ANIMAL</h1>
-            </a>               
-        </div>
-
-        <!--tag para menu hamburguer-->
-        <button aria-label="abrir menu"></button>
-
-        <nav>
-            <ul>
-                <li><a href="projetos.html">PROJETOS</a></li>
-                <li><a href="cadastro.html">CADASTRE-SE</a></li>
-            </ul>
-        </nav>     
+        <div class="cabecalho__itens">                   
+            <nav>
+                <a class="logo" href="/"><h1>VOZ ANIMAL</h1></a> 
+                <div class="mobile__menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav__list">                              
+                    <li><a  href="projetos.html">PROJETOS</a></li>
+                    <li class="sublinhado"><a href="cadastro.html">CADASTRE-SE</a></li>                
+                </ul>
+            </nav>           
+        </div>      
     </header>
     <!--fim cabeçalho-->
 
@@ -33,59 +34,63 @@
     <main>
 
         <!--sessão para cadastro-->
-        <section>
-            <div>
-                <h2>CADASTRE-SE</h2>
-                <h3>Um lar, uma refeição, um afago. Para os animais resgatados, cada detalhe é vital. Cadastre-se e entre para a nossa comunidade de heróis!,  seja você um futuro voluntário ou doador, sua participação nos move. É aqui que começa a sua jornada para transformar vidas e espalhar o amor incondicional que eles merecem.</h3>
-            </div>
+        <section class="secao__cadastro">
+            <div class="conteudo">
+                <div class="conteudo__texto">
+                    <h2>CADASTRE-SE</h2>
+                    <h3>Um lar, uma refeição, um afago. Para os animais resgatados, cada detalhe é vital. Cadastre-se e entre para a nossa comunidade de heróis!,  seja você um futuro voluntário ou doador, sua participação nos move. É aqui que começa a sua jornada para transformar vidas e espalhar o amor incondicional que eles merecem.</h3>
 
-            <div>
-                <img src="assets/imagens/cachorros_no_campo.png" alt="cachorros no campo" loading="lazy" width="424" height="700">
-            </div>
-            <br><br>
-
-            <!--início formulário cadastro-->
-            <div>
-                <form>
-                    <label for="nome">nome completo(obrigatório)</label>
-                    <input type="text" id="nome" name="nome" placeholder="digite seu nome" required> 
-                    <br><br>
-
-                    <label for="email">Email(obrigatório)</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-                    <br><br>
-
-                    <label for="cpf">CPF(obrigatório)</label>
-                    <input type="number" id="cpf" name="cpf" placeholder="Digite o seu CPF" required>
-                    <br><br>
-
-                    <label for="Telefone">Telefone</label>
-                    <input type="tel" id="Telefone" name="Telefone" placeholder="(XX) XXXXX-XXXX">
-                    <br><br>
-
-                    <label for="data">Data de nascimento</label>
-                    <input type="date" id="data" name="data" required>
-                    <br><br>
-                                       
-                    <label for="endereco">Endereço(obrigatório)</label>
-                    <input type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço" required>
-                    <br><br>
-
-                    <label for="cep">CEP</label>
-                    <input type="number" id="cep" name="cep" placeholder="Digite o seu CEP" required>
-                    <br><br>
-
-                    <label for="estado">Estado</label>    
-                    <input type="text" id="estado" name="estado" placeholder="Digite o seu estado" required>
-                    <br><br>
+                    <!--início formulário cadastro-->
+                    <form>
+                        <div>
+                            <label for="nome">nome completo <span>(obrigatório)</span></label> 
+                            <input type="text" id="nome" name="nome" placeholder="digite seu nome" required>
+                        </div>
+                     
+                        <div>
+                            <label for="email">Email <span>(obrigatório)</span></label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                        </div>
                     
-
+                        <div>
+                            <label for="cpf">CPF <span>(obrigatório)</span></label>
+                            <input type="number" id="cpf" name="cpf" placeholder="Digite o seu CPF" required>
+                        </div>
+                    
+                        <div>
+                            <label for="Telefone">Telefone</label>
+                            <input type="tel" id="Telefone" name="Telefone" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                    
+                        <div>
+                            <label for="data">Data de nascimento</label>
+                            <input type="date" id="data" name="data" required>
+                        </div>
+                    
+                        <div>
+                            <label for="endereco">Endereço <span>(obrigatório)</span></label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Digite o seu endereço" required>
+                        </div>            
+                    
+                        <div>
+                            <label for="cep">CEP</label>
+                            <input type="number" id="cep" name="cep" placeholder="Digite o seu CEP" required>
+                        </div>
+                    
+                        <div>
+                            <label for="estado">Estado</label>    
+                            <input type="text" id="estado" name="estado" placeholder="Digite o seu estado" required>   
+                        </div>
                     <button type="submit">CADASTRE-SE</button>
-                    <br><br>
                 </form>                
-            </div>
-            <!--fim formulário cadastro--> 
+                </div>
+                <!--fim formulário cadastro-->
 
+                <div>
+                    <img src="assets/imagens/cachorros_no_campo.png" alt="cachorros no campo" loading="lazy" width="424" height="700">
+                </div>
+                <br><br>
+            </div>
         </section>
         <!--fim sessão cadastro-->
 
@@ -97,6 +102,6 @@
         <p>© 2025 Voz Animal. Todos os direitos reservados.</p>
     </footer>
     <!--fim rodapé-->
-
+    <script src="script.js"></script>
 </body>
 </html>
