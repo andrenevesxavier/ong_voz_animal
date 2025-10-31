@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    --fonte-principal : "Plus Jakarta Sans", sans-serif;
+    --fonte-secundaria : "Bruno Ace SC", sans-serif;
+    --cor-primaria-1 : #F5F2F2;
+    --cor-primaria-2 : #410019;
+    --cor-secundaria-1 : #ffffff;
+    --cor-secundaria-2 : #000000;
+    --cor-secundaria-50pct:rgba(0, 0, 0, 0.5);
+    --cor-terciaria-1 : #C14B4B;
+    --cor-terciaria-2 :#FF6666;   
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.sublinhado {
+    border-bottom: 2px solid var(--cor-terciaria-2);
+}
+
+.projetos {
+    display: grid;
+    margin: 4vh 2vw 12vh;
+    background-color: var(--cor-secundaria-1);
+    border-radius: 0.5rem;
+    padding: 2vh 2vw;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteudo__texto {
+    width: 52vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-right: 200px;
+    padding-top: 2vh;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria-2);
+}
+
+.conteudo__texto p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1.6vh;
+}
+
+.conteudo__texto__introducao {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo__texto__introducao h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 5vh;
+}
+
+.conteudo__texto h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.conteudo__texto__doacao {
+    margin-top: 4vh;
+}
+
+.conteudo__texto__formulario__doacao{
+    margin-top: 5vh;
+}
+
+.conteudo__texto__formulario__doacao form {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.conteudo__texto__formulario__doacao label, input {
+    display: block;
+}
+
+.conteudo__texto__formulario__doacao input {
+    width: 44vw;
+    height: 5vh;
+    padding-left: 10px;
+    color: var(--cor-primaria-2);
+    border-radius: 6px;
+    opacity: 0.6;
+}
+
+.conteudo__texto__formulario__doacao label {
+    margin-bottom: 4px;
+    width: 100%;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--cor-primaria-2);
+}
+
+.conteudo__texto__formulario__doacao span {
+    opacity: 0.5;
+}
+
+.conteudo__texto__formulario__doacao button {
+    cursor: pointer;
+    padding: 1.6vh 0;
+    margin-bottom: 8vh;
+    width: 240px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor-secundaria-2);
+    background-color: var(--cor-terciaria-2);
+    border-radius: 8px;
+    border: none;
+}
+
+.conteudo__texto__formulario__voluntario {
+    margin-top: 5vh;
+}
+
+.conteudo__texto__formulario__voluntario form {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.conteudo__texto__formulario__voluntario label input {
+    display: block;
+}
+
+.conteudo__texto__formulario__voluntario input {
+    width: 44vw;
+    height: 5vh;
+    padding-left: 10px;
+    color: var(--cor-primaria-2);
+    border-radius: 6px;
+    opacity: 0.6;
+}
+
+.conteudo__texto__formulario__voluntario label {
+    margin-bottom: 4px;
+    width: 100%;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--cor-primaria-2);
+}
+
+.conteudo__texto__formulario__voluntario span {
+    opacity: 0.5;
+}
+
+.conteudo__texto__formulario__voluntario button {
+    cursor: pointer;
+    padding: 1.6vh 0;
+    margin-bottom: 8vh;
+    width: 240px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--cor-secundaria-2);
+    background-color: var(--cor-terciaria-2);
+    border-radius: 8px;
+    border: none;
+}
+
+.conteudo__texto__formulario__voluntario label  {
+    display: block;
+}
+
+select {
+    width: 44vw;
+    height: 5vh;
+    padding-left: 10px;
+    color: var(--cor-primaria-2);
+    cursor: pointer;
+}
+
+img {
+    margin-top: 6.5vh;
+    border-radius: 8px;
+    width: 24vw;
+    height: 70vh;
+}
+
+@media (max-width:576px) {
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo__texto {
+        width: 85vw;
+        padding: 0 0 0 4vw ;
+        padding-right: none;
+    }
+
+    .conteudo__texto p {
+        font-size: 12px;
+    }
+
+    .conteudo__texto__introducao h2 {
+        font-size: 28px;
+        margin-bottom: 2vh;
+    }
+
+    .conteudo__texto h3 {
+        font-size: 25px;
+    }
+
+    .conteudo__texto__formulario__doacao input {
+        width: 75vw;
+    }
+
+    .conteudo__texto__formulario__doacao label {
+        font-size: 8px;
+    }
+
+    .conteudo__texto__formulario__doacao button {
+        font-size: 16px;
+        width: 170px;
+    }
+
+    .conteudo__texto__formulario__voluntario input {
+        width: 75vw;
+    }
+
+    .conteudo__texto__formulario__voluntario label {
+        font-size: 8px;
+    }
+
+    .conteudo__texto__formulario__voluntario button {
+        font-size: 16px;
+        width: 190px;
+    }
+
+    select {
+        width: 75vw;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width:577px) and (max-width:768px) {
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo__texto {
+        width: 85vw;
+        padding: 0 0 0 4vw ;
+        padding-right: none;
+    }
+
+    .conteudo__texto p {
+        font-size: 12px;
+    }
+
+    .conteudo__texto__introducao h2 {
+        font-size: 28px;
+        margin-bottom: 2vh;
+    }
+
+    .conteudo__texto h3 {
+        font-size: 25px;
+    }
+
+    .conteudo__texto__formulario__doacao input {
+        width: 75vw;
+    }
+
+    .conteudo__texto__formulario__doacao label {
+        font-size: 8px;
+    }
+
+    .conteudo__texto__formulario__doacao button {
+        font-size: 16px;
+        width: 170px;
+    }
+
+    .conteudo__texto__formulario__voluntario input {
+        width: 75vw;
+    }
+
+    .conteudo__texto__formulario__voluntario label {
+        font-size: 8px;
+    }
+
+    .conteudo__texto__formulario__voluntario button {
+        font-size: 16px;
+        width: 190px;
+    }
+
+    select {
+        width: 75vw;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .conteudo {
+        display: flex;
+        gap: 8vw;
+    }
+
+    .conteudo__texto {
+        width: auto;
+        padding-right:0;
+        margin-left: 2vw;
+    }
+
+    .conteudo__texto__formulario__doacao input {
+        width: 57vw;
+    }
+
+
+    .conteudo__texto__formulario__doacao button {
+        font-size: 16px;
+        width: 170px;
+    }
+
+    .conteudo__texto__formulario__voluntario input {
+        width: 57vw;
+    }
+
+    .conteudo__texto__formulario__voluntario button {
+        font-size: 16px;
+        width: 190px;
+    }
+
+    select {
+        width: 57vw;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .conteudo {
+        display: flex;
+        gap: 8vw;
+    }
+
+    .conteudo__texto {
+        width: auto;
+        padding-right:0;
+        margin-left: 2vw;
+    }
+
+    .conteudo__texto__formulario__doacao input {
+        width: 57vw;
+    }
+
+
+    .conteudo__texto__formulario__doacao button {
+        font-size: 16px;
+        width: 170px;
+    }
+
+    .conteudo__texto__formulario__voluntario input {
+        width: 57vw;
+    }
+
+    .conteudo__texto__formulario__voluntario button {
+        font-size: 16px;
+        width: 190px;
+    }
+
+    select {
+        width: 57vw;
+    }
+}
